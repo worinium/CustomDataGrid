@@ -1,0 +1,15 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:control="clr-namespace:CCLDataGrid">
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="/CustomDataGrid;component/Themes\CCLDataGrid.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+
+    <!--  EXTERNAL ACCESS FOR CUSTOMIZE DEFAULT STYLE  -->
+    <Style
+        x:Key="{ComponentResourceKey {x:Type control:CCLDataGrid},FilterDataGridStyle}"
+        BasedOn="{StaticResource {x:Type control:CCLDataGrid}}" TargetType="{x:Type control:CCLDataGrid}">
+    </Style>
+</ResourceDictionary>
